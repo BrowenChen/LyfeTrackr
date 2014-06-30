@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading"><strong>Welcome to your personalized Life Optimizer</strong></div>
+    <div class="panel-body">
+      <form class="form" method="post" ng-submit="addShow()" name="addForm">
+        <div class="form-group" ng-class="{ 'has-success' : addForm.showName.$valid && addForm.showName.$dirty, 'has-error' : addForm.showName.$invalid && addForm.showName.$dirty }">
+
+        </div>
+        <button class="btn btn-primary" type="submit" ng-disabled="addForm.$invalid">Be a badass</button>
+      </form>
+    </div>
+  </div>
+</div>
