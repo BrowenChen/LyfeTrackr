@@ -51,7 +51,7 @@ $alert-info-text: #25484e;
 @import 'bootstrap/bootstrap';
 
 body {
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 em {
@@ -193,6 +193,7 @@ em {
 .navbar {
   background-color: #ecf0f1;
   box-shadow: 0 3px 2px -3px rgba(0, 0, 0, 0.1);
+  margin: 0px;
 }
 
 .navbar-header {
@@ -229,8 +230,9 @@ em {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 58.75em;
-  position: relative;
+  min-width: 58.75em;
+  position: center;
+  min-height: 300px;
 }
 .col-4,
 .col-5 {
@@ -260,6 +262,7 @@ header[role=banner] {
   padding: 1.25em 0.9375em;
   position: relative;
   text-align: center;
+  min-height: 500px;
 }
 header[role=banner] img {
   margin: 0 auto 1.5em;
@@ -283,7 +286,7 @@ header[role=banner] p {
   background-color: #fff;
   padding: 0 0.5em;
   position: relative;
-  min-height: 100%; 
+  min-height: 500px; 
 }
 .content .wrapper {
   
@@ -348,11 +351,15 @@ header[role=banner] p {
 /*----------------------------------------------------------------------------*/
 
 footer[role=contentinfo] {
+  background-color:#34495e;
   padding: 1.25em 0.9375em;
+  background-size: cover;
   position: relative;
   text-align: center;
+  max-height: 150px;
 }
 footer[role=contentinfo] a {
+  background-size:auto;
   color: #565d67;
 }
 footer[role=contentinfo] a:hover {
@@ -376,13 +383,27 @@ footer[role=contentinfo] li a {
 /*----------------------------------------------------------------------------*/
 /* Other Stuff
 /*----------------------------------------------------------------------------*/
+#container1{
+  background-size:cover;
+  background-color:#16a085; 
+  min-height:500px;
 
+}
 #container2
 {
   background-size:cover;
+  background-color: #ecf0f1;
+  min-height:500px;
 }
 #panel2
 {
   background-size:cover;
 }
 
+#footerWrap{
+  max-height: 150px;
+}
+
+#footWrapClear{
+  max-height: 150px;
+}
