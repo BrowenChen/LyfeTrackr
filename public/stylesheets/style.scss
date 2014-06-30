@@ -191,6 +191,7 @@ em {
 }
 
 .navbar {
+  background-color: #ecf0f1;
   box-shadow: 0 3px 2px -3px rgba(0, 0, 0, 0.1);
 }
 
@@ -218,3 +219,170 @@ em {
     }
   }
 }
+
+
+
+/*----------------------------------------------------------------------------*/
+/* Additional Styling
+/*----------------------------------------------------------------------------*/
+
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 58.75em;
+  position: relative;
+}
+.col-4,
+.col-5 {
+  position: relative;
+}
+.clear:after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+
+/*----------------------------------------------------------------------------*/
+/* Header
+/*----------------------------------------------------------------------------*/
+
+header[role=banner] {
+  background-image: url(/imgs/header.jpg);
+  background-origin: border-box;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 1.25em 0.9375em;
+  position: relative;
+  text-align: center;
+}
+header[role=banner] img {
+  margin: 0 auto 1.5em;
+  width: 3.75em;
+}
+header[role=banner] h1 {
+  color: #fff;
+  margin-bottom: 0.55555556em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+header[role=banner] p {
+  font-size: 1.125em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/*----------------------------------------------------------------------------*/
+/* Content
+/*----------------------------------------------------------------------------*/
+
+.content {
+  background-color: #fff;
+  padding: 0 0.5em;
+  position: relative;
+  min-height: 100%; 
+}
+.content .wrapper {
+  
+  padding: 0 0;
+  width: 400px; 
+  height: 500px;
+
+}
+.content h2 {
+  margin-bottom: 1.07142857em;
+}
+.content img {
+  border: 1px solid #eee;
+  margin: 0 auto;
+  padding: 0.25em;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Sign Up
+/*----------------------------------------------------------------------------*/
+
+.signup-form {
+  background-color: #565d67;
+  color: #dfe4eb;
+  padding: 1.25em 0.9375em;
+  position: relative;
+  text-align: center;
+}
+.signup-form .wrapper {
+  max-width: 48.75em;
+}
+.signup-form p {
+  font-size: 1.125em;
+}
+.signup-form em {
+  color: #00ca81;
+}
+.signup-form img {
+  margin: 0 auto 1.5em;
+  max-width: 17.5em;
+}
+.signup-form form label {
+  left: -9999em;
+  position: absolute;
+  top: -9999em;
+}
+.mc-field-group,
+.indicates-required {
+  margin-bottom: 1.5em;
+  position: relative;
+}
+.indicates-required {
+  font-size: 0.75em;
+}
+.signup-form input[type=submit] {
+  float: right;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/* Footer
+/*----------------------------------------------------------------------------*/
+
+footer[role=contentinfo] {
+  padding: 1.25em 0.9375em;
+  position: relative;
+  text-align: center;
+}
+footer[role=contentinfo] a {
+  color: #565d67;
+}
+footer[role=contentinfo] a:hover {
+  color: #dfe4eb;
+}
+footer[role=contentinfo] ul {
+  font-size: 1.5em;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+footer[role=contentinfo] li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+footer[role=contentinfo] li a {
+  font-weight: 400;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/* Other Stuff
+/*----------------------------------------------------------------------------*/
+
+#container2
+{
+  background-size:cover;
+}
+#panel2
+{
+  background-size:cover;
+}
+

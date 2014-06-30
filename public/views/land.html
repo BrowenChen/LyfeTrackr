@@ -1,13 +1,36 @@
-<div class="container">
-  <div class="panel panel-default">
-    <div class="panel-heading"><strong>Welcome to your personalized Life Optimizer</strong></div>
-    <div class="panel-body">
-      <form class="form" method="post" ng-submit="addShow()" name="addForm">
-        <div class="form-group" ng-class="{ 'has-success' : addForm.showName.$valid && addForm.showName.$dirty, 'has-error' : addForm.showName.$invalid && addForm.showName.$dirty }">
+<header role="banner">
+  <div class="wrapper">
 
-        </div>
-        <button class="btn btn-primary" type="submit" ng-disabled="addForm.$invalid">Be a badass</button>
-      </form>
-    </div>
+    <img src="imgs/owl.png" class="img-circle" alt="Owl">
+    
+    <h1>LyfeTrackr. Declutter your life.</h1>
+    
+    <p>All the organization and productivity tools you'll ever need.. </p>
+    
+    <button type="submit" class="btn btn-large btn-success">Sign Up here</button>
+
+      <p style="font-size: 13px;">Or, <a href="/login">Login</a></p>
   </div>
+</header>
+
+
+<div id="pannel2" class="panel panel-default">
+
+
+
+
+  <div id="panelHead" class="panel-heading"><strong>Welcome to your personalized Life Optimizer</strong></div>
+  <div id="panelBody" class="panel-body">
+    <form class="form" method="post" ng-submit="addShow()" name="addForm">
+      <div class="form-group" ng-class="{ 'has-success' : addForm.showName.$valid && addForm.showName.$dirty, 'has-error' : addForm.showName.$invalid && addForm.showName.$dirty }">
+
+      </div>
+      <button class="btn btn-primary" type="submit" >Be a badass</button>
+    </form>
+  </div>
+</div>
+
+
+<div id="container2" class="container-fluid">
+  <div class='well'>Hey There</div>
 </div>
