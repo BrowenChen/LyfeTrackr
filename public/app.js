@@ -27,6 +27,10 @@ angular.module('MyApp', ['ngCookies', 'ngResource', 'ngMessages', 'ngRoute', 'mg
         templateUrl: 'views/trackr.html',
         controller: 'TrackrController'
       })
+      .when('/learning', {
+        templateUrl: 'views/learning.html',
+        controller: 'LearningController'
+      })
       .otherwise({
         redirectTo: '/'
       });
