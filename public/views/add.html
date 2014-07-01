@@ -1,15 +1,42 @@
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span6">
+    Test
+    </div>
+
+    <div class="span6">
+    Test
+    </div>
+  </div>
+</div>
+
 <div class="container">
   <div class="panel panel-default">
     <div class="panel-heading">Daily Tasks</div>
     <div class="panel-body">
       <form class="form" method="post" ng-submit="addShow()" name="addForm">
         <div class="form-group" ng-class="{ 'has-success' : addForm.showName.$valid && addForm.showName.$dirty, 'has-error' : addForm.showName.$invalid && addForm.showName.$dirty }">
+
+
+
+
           <input class="form-control" type="text" name="showName" ng-model="showName" placeholder="Daily Goals Here" required autofocus>
           <div class="help-block text-danger" ng-if="addForm.showName.$dirty" ng-messages="addForm.showName.$error">
             <div ng-message="required"> Daily Goals here </div>
           </div>
         </div>
         <button class="btn btn-primary" type="submit" ng-disabled="addForm.$invalid">Add Goal</button>
+
+        <hr>
+
+        <ul class='list-group' >
+          <li class="list-group-item">Test <span class="badge">14</span> </li>
+          <li class="list-group-item">Use</li>
+          <li class="list-group-item">Angular</li>
+          <li class="list-group-item">Mongodb</li>
+          <li class="list-group-item">asdasdas</li>
+        </ul>
+
       </form>
     </div>
   </div>
