@@ -1,6 +1,6 @@
 angular.module('MyApp')
   .controller('AddCtrl', ['$scope', '$alert', 'Show', function($scope, $alert, Show) {
-    alert("testing");
+    
     $scope.addShow = function() {
       Show.save({ showName: $scope.showName },
         function() {
@@ -25,3 +25,26 @@ angular.module('MyApp')
         });
     };
   }]);
+
+
+
+//TEST HACKS CONTROLLERS HERE ----------------
+
+
+//Student 
+function StudentController($scope){
+  $scope.studentDescription = "Owen";
+  $scope.action = "None Set";
+  $scope.studentNumber = 0;
+  $scope.rightNumber = 0;
+  $scope.wrongNumber = 0;
+
+  $scope.addRightCount = function(){
+    this.rightNumber++;
+  };
+
+  $scope.addWrongCount = function(){
+    this.wrongNumber++;
+  };
+};
+

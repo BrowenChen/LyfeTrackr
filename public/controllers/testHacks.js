@@ -2,7 +2,7 @@ var myApp = angular.module('MyApp', [])
 
 //Controller to contain data for streak
 myApp.controller('hacksController', ['$scope', function($scope) {
-	alert("Test Hacks");
+	// alert("Test Hacks");
 	$scope.hacks = 0;
 	$scope.output = 0;
 
