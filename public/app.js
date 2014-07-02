@@ -31,6 +31,10 @@ angular.module('MyApp', ['ngCookies', 'ngResource', 'ngMessages', 'ngRoute', 'mg
         templateUrl: 'views/learning.html',
         controller: 'LearningController'
       })
+      .when('/testHacks', {
+        templateUrl: 'views/testHacks.html',
+        controller: 'HackController'
+      })
       .otherwise({
         redirectTo: '/'
       });
