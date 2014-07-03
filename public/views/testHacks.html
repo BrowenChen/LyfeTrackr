@@ -1,6 +1,39 @@
 
+<div class="container jumbotron">
+	<!-- Socket Testing HERE -->
+	<script type="sockets" src="https://cdn.socket.io/socket.io-1.0.6.js"></script>
+
+	<h1> TESTING SOCKETS SOCKETS SOCKETS <strong>asdasdas</strong>SOCKETS</h1>
+
+<!-- 
+	<script>
+		console.log("test");
+	</script> -->
+
+<!-- 	<script type="text/javascript">
+		console.log("Liftoff");
+		var socket = io.connect('http://10.2.198.234:3456');
+ 		
+		socket.on('news', function (data) {
+			console.log(data);
+			socket.emit('my other event', { init: 'GIMME STUDENT DATAAARRR', classroom: 'asdalsjdalskdj'});
+		});
+ 
+		socket.on('send', function (data) {
+			console.log('data from new student' + JSON.stringify(data));
+		});
+ 
+		function send(){
+			console.log('press');
+			socket.emit('send', { message: 'yoyoyoyoyo', username: 'DINGO'});
+		}
 
 
+	</script> -->
+
+
+</div>
+	
 
 
 <!-- Student Info Classroom Module -->
@@ -18,7 +51,12 @@
           	<p>What action? </p>
           	<input name"action" ng-model='action'  ng-placeholder='How many numbers did this person get right'> <br>
 
-          	Student {{studentNumber}} and action {{action}}
+          	Student {{studentNumber}} and action {{action}}. <br>
+          	{{studentList}} <br>
+
+          	<div class="btn btn-sm btn-success" ng-click="addStudent(studentOwen)">add Student Owen</div>
+
+          	<div class="btn btn-md btn-success" ng-click="removeAllStudents()"> Remove all students!!! </div>
 
 
 		</div>

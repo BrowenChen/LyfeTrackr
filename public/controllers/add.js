@@ -1,6 +1,13 @@
 angular.module('MyApp')
   .controller('AddCtrl', ['$scope', '$alert', 'Show', function($scope, $alert, Show) {
     
+    $scope.daily = "Daily";
+
+    $scope.addTask = function(){
+      alert("TaskASDssssA");
+    }
+
+
     $scope.addShow = function() {
       Show.save({ showName: $scope.showName },
         function() {
@@ -26,18 +33,34 @@ angular.module('MyApp')
     };
   }]);
 
+//Task Contorllers here
+function taskController($scope){
+  $scope.daily = "daily";
+
+  $scope.addTask = function(){
+    $alert("ADDING TASK");
+  }
+};
+
 
 
 //TEST HACKS CONTROLLERS HERE ----------------
 
 
+
+
+
 //Student 
 function StudentController($scope){
+
   $scope.studentDescription = "Owen";
   $scope.action = "None Set";
   $scope.studentNumber = 0;
   $scope.rightNumber = 0;
   $scope.wrongNumber = 0;
+
+  $scope.studentList = []; 
+
 
   $scope.addRightCount = function(){
     this.rightNumber++;
@@ -46,5 +69,22 @@ function StudentController($scope){
   $scope.addWrongCount = function(){
     this.wrongNumber++;
   };
+
+  $scope.addStudent = function(student){
+    this.studentList.push(student);
+  };
+
+
+  $scope.removeAllStudents = function(){
+    this.studentList = [];
+  }
+
+  $scope.studentOwen = {
+    name: "Owen",
+    status: {rightNumber: 0, 
+             wrongNumber: 0}
+  };  
 };
+
+
 
