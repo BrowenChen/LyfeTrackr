@@ -93,9 +93,7 @@ var changeDate = function(dateString){
 }
 
 var initInfo = function(){ 
-
 	var newData = {};
-
 	for (var i = 1; i < 30; ++i){
 		var newDate = '2014.08.' + String(i);
 		var insert = changeDate(newDate);

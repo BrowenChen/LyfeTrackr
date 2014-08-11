@@ -21,13 +21,28 @@ html(ng-app="myApp", ng-controller='AppCtrl')
 
 		
 		.row
-			.col-sm-6.col-sm-offset-3
-				#calendar.jumbotron
+			.col-sm-6.col-sm-offset-2
+				#calendar.jumbotron(style="opacity: .85;")
 					.row
-						h2(style="text-align:center") Title
+						h2(style="text-align:center") Tracking Progress
+						hr	
 					.row
 						.col-sm-8.col-sm-offset-1
 							#cal-heatmap
+		
+			.col-sm-3
+				#control.jumbotron(style="opacity: .85;")
+					h2(style="text-align:center;") Control
+					hr
+					.row
+						.col-sm-4
+							.form
+								button.btn.btn-primary(style="border-radius:10px;", ng-click="dateConvert()") Input Date
+								input(type="text", ng-model="inputDate", placeholder=" ex. 2014.8.01", name="date", style="border-radius:10px;")
+								br
+								br
+								button.btn.btn-primary(style="border-radius:10px;") Value
+								input(type="text", placeholder=" Value from 1 - 100", name="value", style="border-radius:10px;")
 
 
 
